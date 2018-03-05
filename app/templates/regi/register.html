@@ -1,0 +1,925 @@
+﻿<?php
+
+// if the from is loaded from WordPress form loader plugin,
+// the phpfmg_display_form() will be called by the loader
+if( !defined('FormmailMakerFormLoader') ){
+    # This block must be placed at the very top of page.
+    # --------------------------------------------------
+	require_once( dirname(__FILE__).'/form.lib.php' );
+    phpfmg_display_form();
+    # --------------------------------------------------
+};
+
+
+function phpfmg_form( $sErr = false ){
+		$style=" class='form_text' ";
+
+?>
+
+
+
+
+
+
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+
+<head>
+	<title>Contact Us | Mastros Food and Income | Empowering People, Living Fulfilled</title>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    
+    <!-- Favicon --> 
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+    <!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
+   	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <!-- ######### CSS STYLES ######### -->
+	
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+    
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    
+    <!-- responsive devices styles -->
+	<link rel="stylesheet" media="screen" href="css/responsive-leyouts.css" type="text/css" />
+    
+    <!-- animations -->
+    <link href="js/animations/css/animations.min.css" rel="stylesheet" type="text/css" media="all" />
+    
+<!-- just remove the below comments witch color skin you want to use -->
+    <link rel="stylesheet" href="css/colors/lightblue.css" />
+    <!--<link rel="stylesheet" href="css/colors/green.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/cyan.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/orange.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/lightblue.css" />
+    <!--<link rel="stylesheet" href="css/colors/pink.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/purple.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/bridge.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/slate.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/yellow.css" />-->
+    <!--<link rel="stylesheet" href="css/colors/darkred.css" />-->
+
+<!-- just remove the below comments witch bg patterns you want to use --> 
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-default.css" />-->
+    	<link rel="stylesheet" href="css/bg-patterns/pattern-five.css" />
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-two.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-three.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-four.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-five.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-six.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-seven.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-eight.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-nine.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-ten.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-eleven.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-twelve.css" />-->
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-thirteen.css" />-->
+    
+    <!-- mega menu -->
+    <link href="js/mainmenu/sticky.css" rel="stylesheet">
+    <link href="js/mainmenu/bootstrap.min.css" rel="stylesheet">
+    <link href="js/mainmenu/demo.css" rel="stylesheet">
+    <link href="js/mainmenu/menu.css" rel="stylesheet">
+    
+    <!-- slide panel -->
+    <link rel="stylesheet" type="text/css" href="js/slidepanel/slidepanel.css">
+    
+	<!-- Master Slider -->
+    <link rel="stylesheet" href="js/masterslider/style/masterslider.css" />
+    <link rel="stylesheet" href="js/masterslider/skins/default/style.css" />
+    <link rel="stylesheet" href="js/masterslider/style.css" />
+
+	<link href='js/masterslider/style/ms-staff-style.css' rel='stylesheet' type='text/css'>
+    
+    <!-- cubeportfolio -->
+	<link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
+    
+	<!-- tabs -->
+    <link rel="stylesheet" type="text/css" href="js/tabs/assets/css/responsive-tabs.css">
+    <link rel="stylesheet" type="text/css" href="js/tabs/assets/css/responsive-tabs2.css">
+
+	<!-- carousel -->
+    <link rel="stylesheet" href="js/carousel/flexslider.css" type="text/css" media="screen" />
+ 	<link rel="stylesheet" type="text/css" href="js/carousel/skin.css" />
+    
+    <!-- accordion -->
+    <link rel="stylesheet" href="js/accordion/accordion.css" type="text/css" media="all">
+    
+    <!-- Lightbox -->
+    <link rel="stylesheet" type="text/css" href="js/lightbox/jquery.fancybox.css" media="screen" />
+    <style type="text/css">
+    a:link {
+	color: #FF85D1;
+}
+    </style>
+    
+    <script type="text/javascript" src="worldclo.js"></script>
+        <!-- forms -->
+    <link rel="stylesheet" href="js/form/sky-forms.css" type="text/css" media="all">
+    
+</head>
+<body>
+
+
+<div class="site_wrapper">
+
+<div id="sliderWrap">
+
+
+	
+        
+</div>
+
+<div class="clearfix"></div>
+
+<header id="header">
+
+	<!-- Top header bar -->
+	<div id="topHeader">
+    
+	<div class="wrapper">
+         
+        <div class="top_nav">
+        <div class="container">
+                
+        <div class="right">
+            
+            <ul>
+            	<li class="link">
+                      <table width="400" border="0" align="right" cellspacing="0" >
+  <tr>    
+    <td id="TimeZone0" width="100"></td>
+    
+
+  </tr>
+</table>
+                
+                </li>
+                <li class="link"><a href="http://www.mastros.com.ng/webmail"><i class="fa fa-edit"></i> Staff e-mail</a></li>
+                <li><a href="mailto:info@mastros.com.ng"><i class="fa fa-envelope"></i> info@mastros.com.ng</a></li>
+                <li><i class="fa fa-phone"></i> +234 906 5599 735</li>
+            	
+                <li><a href="https://web.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/mastrosfoodinc"><i class="fa fa-twitter"></i></a></li>
+                
+                <li><a href="https://www.instagram.com/mastroslimited/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            
+        </div><!-- end right social links -->
+        
+        </div>
+        </div>
+            
+ 	</div>
+    
+	</div><!-- end top navigation -->
+	
+    
+	<div id="trueHeader" >
+    
+	<div class="wrapper">
+    
+     <div class="container" >
+    
+		<!-- Logo -->
+		<div class="logo"><a href="index.html" name="logo" id="logo"></a></div>
+		
+	<!-- Menu -->
+	<div class="menu_main">
+        
+	<div class="navbar yamm navbar-default">
+    
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"  > <span>Menu</span>
+          <button type="button" > <i class="fa fa-bars"></i></button>
+        </div>
+      </div>
+      
+      <div id="navbar-collapse-1" class="navbar-collapse collapse pull-right">
+      
+        <ul class="nav navbar-nav">
+        
+ <li><a href="index.html" class=""><i class="fa fa-home"></i> Home</a></li>
+        
+        
+        
+ <li><a href="about_us.html" class=""><i class="fa fa-briefcase"></i> About Us</a></li>
+        
+ <li><a href="how_it_works.html" class=""><i class="fa fa-dashboard"></i> How It Works</a></li>
+ 
+<li> <a href="register.php" class="active"><i class="fa fa-book"></i> Register</a></li>       
+
+ <li><a href="contact_us.html" class=""><i class="fa fa-phone"></i> Contact Us</a></li>
+  
+          </ul>
+
+      </div>
+      </div>
+     </div>
+     
+	</div><!-- end menu -->
+        
+	</div>
+		
+	</div>
+    
+	</div>
+    
+</header>
+<div class="clearfix"></div>
+
+<div class="page_title">
+<div class="container">
+
+    <div class="title"><h1>Online Registration</h1></div>
+    
+</div>
+</div><!-- end page title --> 
+
+<div class="one_full">
+	
+	
+</div>
+
+
+
+
+
+<div class="container">
+
+    <div class="content_fullwidth">
+    
+
+      
+       
+            
+                 
+                      
+                           
+                                
+                                          
+      <div class="two_third">
+      
+      
+      <div id='frmFormMailContainer'>
+
+<form name="frmFormMail" id="frmFormMail" target="submitToFrame" action='<?php echo PHPFMG_ADMIN_URL . '' ; ?>' method='post' enctype='multipart/form-data' onsubmit='return fmgHandler.onSubmit(this);'>
+
+<input type='hidden' name='formmail_submit' value='Y'>
+<input type='hidden' name='mod' value='ajax'>
+<input type='hidden' name='func' value='submit'>
+
+            
+<ol class='phpfmg_form' >
+
+
+<li class='field_block' id='field_1_div'><hr class='sectionbreak'>
+APPLICANT'S INFORMATION</li>
+<li class='field_block' id='field_2_div'><div class='col_label'>
+	<label class='form_field'>FULL NAME:</label> <label class='form_required' >*</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_2"  id="field_2" value="<?php  phpfmg_hsc("field_2", ""); ?>" class='text_box'>
+	<div id='field_2_tip' class='instruction'>*Firs Name - Middle Name - Surname</div>
+	</div>
+</li>
+
+<li class='field_block' id='field_3_div'><div class='col_label'>
+	<label class='form_field'>PHONE NO:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_3"  id="field_3" value="<?php  phpfmg_hsc("field_3", ""); ?>" class='text_box'>
+	<div id='field_3_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_4_div'><div class='col_label'>
+	<label class='form_field'>WHATSAPP NO:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_4"  id="field_4" value="<?php  phpfmg_hsc("field_4", ""); ?>" class='text_box'>
+	<div id='field_4_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_5_div'><div class='col_label'>
+	<label class='form_field'>DATE OF BIRTH:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	
+<?php
+    $field_5 = array(
+        'month' => "-MM- =,|01|02|03|04|05|06|07|08|09|10|11|12",
+        'day' => "-DD- =,|01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31",
+        'startYear' => date("Y")-70,
+        'endYear' => date("Y")-15,
+        'yearPrompt' => '-YYYY-',
+        'format' => "dd/mm/yyyy",
+        'separator' => "/",
+        'field_name' => "field_5",
+    );
+    phpfmg_date_dropdown( $field_5 );
+?>
+
+	<div id='field_5_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_6_div'><div class='col_label'>
+	<label class='form_field'>ADDRESS:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_6"  id="field_6" value="<?php  phpfmg_hsc("field_6", ""); ?>" class='text_box'>
+	<div id='field_6_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_7_div'><div class='col_label'>
+	<label class='form_field'>EMAIL ADDRESS:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_7"  id="field_7" value="<?php  phpfmg_hsc("field_7", ""); ?>" class='text_box'>
+	<div id='field_7_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_8_div'><div class='col_label'>
+	<label class='form_field'>NATIONALITY:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_8"  id="field_8" value="<?php  phpfmg_hsc("field_8", ""); ?>" class='text_box'>
+	<div id='field_8_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_9_div'><div class='col_label'>
+	<label class='form_field'>NEXT-OF-KIN:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_9"  id="field_9" value="<?php  phpfmg_hsc("field_9", ""); ?>" class='text_box'>
+	<div id='field_9_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_10_div'><div class='col_label'>
+	<label class='form_field'>PHONE NO:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_10"  id="field_10" value="<?php  phpfmg_hsc("field_10", ""); ?>" class='text_box'>
+	<div id='field_10_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_11_div'><hr class='sectionbreak'>
+ACCOUNT DETAILS:</li>
+<li class='field_block' id='field_12_div'><div class='col_label'>
+	<label class='form_field'>BANK NAME:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_12"  id="field_12" value="<?php  phpfmg_hsc("field_12", ""); ?>" class='text_box'>
+	<div id='field_12_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_13_div'><div class='col_label'>
+	<label class='form_field'>ACCOUNT NO:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_13"  id="field_13" value="<?php  phpfmg_hsc("field_13", ""); ?>" class='text_box'>
+	<div id='field_13_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_14_div'><div class='col_label'>
+	<label class='form_field'>ACCOUNT NAME:</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_14"  id="field_14" value="<?php  phpfmg_hsc("field_14", ""); ?>" class='text_box'>
+	<div id='field_14_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_15_div'><hr class='sectionbreak'>
+MARITAL STATUS</li>
+<li class='field_block' id='field_16_div'><div class='col_label'>
+	<label class='form_field'>MARRIED OF SINGLE?</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_16"  id="field_16" value="<?php  phpfmg_hsc("field_16", ""); ?>" class='text_box'>
+	<div id='field_16_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_17_div'><div class='col_label'>
+	<label class='form_field'>IF MARRIED, SPOUSE FULL NAME</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_17"  id="field_17" value="<?php  phpfmg_hsc("field_17", ""); ?>" class='text_box'>
+	<div id='field_17_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_18_div'><hr class='sectionbreak'>
+PROVE OF MARRIAGE</li>
+<li class='field_block' id='field_19_div'><div class='col_label'>
+	<label class='form_field'>WEDDING CERTIFICATE</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<?php phpfmg_radios( 'field_19', "CERTIFICATE OF WHITE WEDDING:|COURT WEDDING|TRADITIONAL WEDDING" );?>
+	<div id='field_19_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_20_div'><div class='col_label'>
+	<label class='form_field'>DATE OF MARRIAGE</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_20"  id="field_20" value="<?php  phpfmg_hsc("field_20", " "); ?>" class='text_box'>
+	<div id='field_20_tip' class='instruction'>* Day / Month /Year</div>
+	</div>
+</li>
+
+<li class='field_block' id='field_21_div'><hr class='sectionbreak'>
+REFERRAL'S DETAILS</li>
+<li class='field_block' id='field_22_div'><div class='col_label'>
+	<label class='form_field'>FULL NAME</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_22"  id="field_22" value="<?php  phpfmg_hsc("field_22", ""); ?>" class='text_box'>
+	<div id='field_22_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_23_div'><div class='col_label'>
+	<label class='form_field'>REFERRAL'S ID No.</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<input type="text" name="field_23"  id="field_23" value="<?php  phpfmg_hsc("field_23", ""); ?>" class='text_box'>
+	<div id='field_23_tip' class='instruction'></div>
+	</div>
+</li>
+
+<li class='field_block' id='field_24_div'><hr class='sectionbreak'>
+SALES OPTION:</li>
+<li class='field_block' id='field_25_div'><div class='col_label'>
+	<label class='form_field'>TICK</label> <label class='form_required' >&nbsp;</label> </div>
+	<div class='col_field'>
+	<?php phpfmg_checkboxes( 'field_25', "I LOVE MARKETING OF PRODUCTS|I AM TOO TIMID TO MARKET PRODUCTS" );?>
+	<div id='field_25_tip' class='instruction'></div>
+	</div>
+</li>
+
+
+<li class='field_block' id='phpfmg_captcha_div'>
+	<div class='col_label'></div><div class='col_field'>
+	<?php phpfmg_show_captcha(); ?>
+	</div>
+</li>
+
+
+            <li>
+            <div class='col_label'>&nbsp;</div>
+            <div class='form_submit_block col_field'>
+	
+
+                <input type='submit' value='Submit' class='form_button'>
+
+				<div id='err_required' class="form_error" style='display:none;'>
+				    <label class='form_error_title'>Please check the required fields</label>
+				</div>
+				
+
+
+                <span id='phpfmg_processing' style='display:none;'>
+                    <img id='phpfmg_processing_gif' src='<?php echo PHPFMG_ADMIN_URL . '?mod=image&amp;func=processing' ;?>' border=0 alt='Processing...'> <label id='phpfmg_processing_dots'></label>
+                </span>
+            </div>
+            </li>
+
+</ol>
+</form>
+
+<iframe name="submitToFrame" id="submitToFrame" src="javascript:false" style="position:absolute;top:-10000px;left:-10000px;" /></iframe>
+
+</div>
+     
+     <!-- end of form container -->
+
+
+<!-- [Your confirmation message goes here] -->
+<div id='thank_you_msg' style='display:none;'>
+Your form has been sent. Thank you! 
+
+<BR>
+
+BACK TO <a href="index.html"> HOME </a> </div>
+     
+      
+        
+      </div><!-- end section -->
+      
+      <div class="one_third last">
+      
+        <div class="address_info two">
+        
+          <h4>PROCEDURES (KINDLY NOTE)</h4>
+          <ul>
+            <li><br>
+              Fill the Form on this page to register and we shall get back to you shortly.
+              
+             <br><br>
+             Make your payment (Online Transfer or Bank Deposite) to the Account Details below
+             
+             <br><br>
+             
+              BANKER:............
+          <BR> ACCOUNT NUMBER: ..........
+          <BR> ACCOUNT NAME: MASTROS NIG. LTD.
+             
+             </li>
+            
+            <br><br>
+            CONTACT US BELOW FOR FURTHER EQUIRY
+            <li> Telephone: +234-906-559-9735</li>
+           <li> WhatsApp: +234-906-559-9735<br />
+              E-mail: <a href="mailto:info@mastros.com.ng">info@mastros.com.ng</a><strong> ; </strong><a href="mailto:mastrosng@gmail.com"> mastrosng@gmail.com</a><br />
+              Website: <a href="index.html">www.mastros.com.ng</a> </li>
+          </ul>
+          
+        </div><!-- end section -->
+        
+	  </div>
+        
+    </div>
+    
+  </div><!-- end content area -->
+
+<div class="clearfix margin_top3"></div>
+
+
+<div class="footer_graph"></div>
+
+
+<div class="footer1">
+  <div class="container">
+    <div class="clearfix divider_dashed1"></div>
+    <div class="one_fourth animate" data-anim-type="fadeInUp">
+      <ul class="faddress">
+        <li><img src="images/footer-logo.png" alt="" /></li>
+        <li><i class="fa fa-map-marker fa-lg"></i> MASTROS Nigeria Limited 
+        <br> No. 1 Aba Road, Opposite Four Point Hotel, Opp. Plaza, Ikot Ekpene, Akwan Ibom State - Nigeria  </li>
+        
+        <li><i class="fa fa-phone"></i>Tel:  +234 906 5599 735 </li>
+        <li><a href="mailto:info@mastros.com.ng"><i class="fa fa-envelope"></i> info@mastros.com.ng</a></li>
+        <li><a href="mailto:mastrosng@gmail.com"><i class="fa fa-envelope"></i> mastrosng@gmail.com</a></li>
+        <li><img src="images/footer-wmap.png" alt="" /></li>
+      </ul>
+    </div>
+    <!-- end address -->
+    <div class="one_fourth animate" data-anim-type="fadeInUp">
+      <div class="qlinks">
+        <h4 class="lmb">Quick Links</h4>
+        <ul>
+          <li><a href="index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li><a href="about_us.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+          <li><a href="how_it_works.html"><i class="fa fa-angle-right"></i> How It Works</a></li>
+          <li><a href="register.php"><i class="fa fa-angle-right"></i> Register Now</a></li>
+          <li><a href="contact_us.html"><i class="fa fa-angle-right"></i> Enquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end links -->
+    <div class="one_fourth animate" data-anim-type="fadeInUp">
+      <div class="siteinfo">
+        <h4 class="lmb">About Us</h4>
+        <p> Mastros Food and Income is a referral marketing programme put in place by the Mastros Group of Companies. The firm is registered in Nigeria under the Corporate Affairs Commission to carry-out business.  </p>
+        <br />
+        <a href="about_us.html">Read more <i class="fa fa-long-arrow-right"></i></a></div>
+    </div>
+    <!-- end site info -->
+    <div class="one_fourth last animate" data-anim-type="fadeInUp">
+      <h4>Follow on Twitter</h4>
+      <div id="flickr_badge_wrapper"> <a class="twitter-timeline" data-height="250" data-theme="dark" href="https://twitter.com/mastrosfoodinc">Tweets by Mastrofood&income</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <!-- end flickr -->
+  </div>
+</div><!-- end footer -->
+
+<div class="clearfix"></div>
+
+<div class="copyright_info">
+  <div class="container">
+    <div class="clearfix divider_dashed10"></div>
+    <div class="one_half animate" data-anim-type="fadeInRight"> Copyright ©2018 Mastros Nigeria Ltd. All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></div>
+    <div class="one_half last">
+      <ul class="footer_social_links">
+        <li class="animate" data-anim-type="zoomIn"><a href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        <li class="animate" data-anim-type="zoomIn"><a href="https://twitter.com/mastrofoodinc"><i class="fa fa-twitter"></i></a></li>
+        <li class="animate" data-anim-type="zoomIn"><a href="https://www.instagram.com/mastroslimited/"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- end copyright info -->
+
+
+<a href="#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
+
+
+
+
+
+
+</div>
+
+    
+<!-- ######### JS FILES ######### -->
+<!-- get jQuery from the google apis -->
+<script type="text/javascript" src="js/universal/jquery.js"></script>
+
+<!-- style switcher -->
+<script src="js/style-switcher/jquery-1.js"></script>
+<script src="js/style-switcher/styleselector.js"></script>
+
+<!-- animations -->
+<script src="js/animations/js/animations.min.js" type="text/javascript"></script>
+
+
+<!-- slide panel -->
+<script type="text/javascript" src="js/slidepanel/slidepanel.js"></script>
+
+<!-- mega menu -->
+<script src="js/mainmenu/bootstrap.min.js"></script> 
+<script src="js/mainmenu/customeUI.js"></script> 
+
+<!-- jquery jcarousel -->
+<script type="text/javascript" src="js/carousel/jquery.jcarousel.min.js"></script>
+
+<!-- scroll up -->
+<script src="js/scrolltotop/totop.js" type="text/javascript"></script>
+
+<!-- tabs -->
+<script src="js/tabs/assets/js/responsive-tabs.min.js" type="text/javascript"></script>
+
+<!-- jquery jcarousel -->
+<script type="text/javascript">
+(function($) {
+ "use strict";
+
+	jQuery(document).ready(function() {
+			jQuery('#mycarouselthree').jcarousel();
+	});
+	
+})(jQuery);
+</script>
+
+
+<!-- accordion -->
+<script type="text/javascript" src="js/accordion/custom.js"></script>
+
+<!-- sticky menu -->
+<script type="text/javascript" src="js/mainmenu/sticky.js"></script>
+<script type="text/javascript" src="js/mainmenu/modernizr.custom.75180.js"></script>
+
+<script src="js/form/jquery.form.min.js"></script>
+<script src="js/form/jquery.validate.min.js"></script>
+<script type="text/javascript">
+(function($) {
+ "use strict";
+
+	$(function()
+	{
+		// Validation
+		$("#sky-form").validate(
+		{					
+			// Rules for form validation
+			rules:
+			{
+				name:
+				{
+					required: true
+				},
+				email:
+				{
+					required: true,
+					email: true
+				},
+				message:
+				{
+					required: true,
+					minlength: 10
+				}
+			},
+								
+			// Messages for form validation
+			messages:
+			{
+				name:
+				{
+					required: 'Please enter your name',
+				},
+				email:
+				{
+					required: 'Please enter your email address',
+					email: 'Please enter a VALID email address'
+				},
+				message:
+				{
+					required: 'Please enter your message'
+				}
+			},
+								
+			// Ajax form submition					
+			submitHandler: function(form)
+			{
+				$(form).ajaxSubmit(
+				{
+					success: function()
+					{
+						$("#sky-form").addClass('submited');
+					}
+				});
+			},
+			
+			// Do not change code below
+			errorPlacement: function(error, element)
+			{
+				error.insertAfter(element.parent());
+			}
+		});
+	});			
+
+})(jQuery);
+</script>
+
+<!-- cubeportfolio -->
+<script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="js/cubeportfolio/main.js"></script>
+<script type="text/javascript" src="js/cubeportfolio/main5.js"></script>
+<script type="text/javascript" src="js/cubeportfolio/main6.js"></script>
+
+<!-- carousel -->
+<script defer src="js/carousel/jquery.flexslider.js"></script>
+<script defer src="js/carousel/custom.js"></script>
+
+<!-- lightbox -->
+<script type="text/javascript" src="js/lightbox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/lightbox/custom.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+<?php
+
+    phpfmg_javascript($sErr);
+
+}
+# end of form
+
+
+
+
+function phpfmg_form_css(){
+    $formOnly = isset($GLOBALS['formOnly']) && true === $GLOBALS['formOnly'];
+?>
+<style type='text/css'>
+<?php 
+if( !$formOnly ){
+    echo"
+body{
+    margin-left: 18px;
+    margin-top: 18px;
+}
+
+body{
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color : #474747;
+    background-color: transparent;
+}
+
+select, option{
+    font-size:13px;
+}
+";
+}; // if
+?>
+
+ol.phpfmg_form{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+ol.phpfmg_form input, ol.phpfmg_form textarea, ol.phpfmg_form select{
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ol.phpfmg_form li{
+    margin-bottom:5px;
+    clear:both;
+    display:block;
+    overflow:hidden;
+	width: 100%
+}
+
+
+.form_field, .form_required{
+    font-weight : bold;
+}
+
+.form_required{
+    color:red;
+    margin-right:8px;
+}
+
+.field_block_over{
+}
+
+.form_submit_block{
+    padding-top: 3px;
+}
+
+.text_box,.text_select {
+    height: 32px;
+}
+
+.text_box, .text_area, .text_select {
+    min-width:160px;
+    max-width:300px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text_area{
+    height:80px;
+}
+
+.form_error_title{
+    font-weight: bold;
+    color: red;
+}
+
+.form_error{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form_error_highlight{
+    background-color: #F4F6E5;
+    border-bottom: 1px dashed #ff0000;
+}
+
+div.instruction_error{
+    color: red;
+    font-weight:bold;
+}
+
+hr.sectionbreak{
+    height:1px;
+    color: #ccc;
+}
+
+#one_entry_msg{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#frmFormMailContainer input[type="submit"]{
+    padding: 10px 25px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #FAFBFC;
+}
+
+#frmFormMailContainer input[type="submit"]:hover{
+    background-color: #E4F0F8;
+}
+
+<?php phpfmg_text_align();?>    
+
+
+
+</style>
+
+<?php
+}
+# end of css
+ 
+# By: formmail-maker.com
+?>

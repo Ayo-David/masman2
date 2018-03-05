@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054) -->
+<html lang="zxx" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Add Favicon -->
+        <link rel="shortcut icon" href="http://codepixar.com/educare/php/img/logo/favicon.png">
+        <!-- Author Meta -->
+        <meta name="author" content="CodePixar">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        
+        <!-- Site Title -->
+        <title>Educare</title>
+        
+        <!--
+        CSS
+        ============================================= -->
+        <link href="./landing/css" rel="stylesheet">
+        <link href="./landing/css(1)" rel="stylesheet">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/materialize.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/materialize.css')}}landing/owl.carousel.css">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/materialize.css')}}./landing/et-line.css">
+        <!-- <link rel="stylesheet" href="css/animate.css"> -->
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/slicknav.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/flaticon.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='landing/main.css')}}">
+        <!-- <link rel="stylesheet" href="css/minified.css"> -->
+        
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><script type="text/javascript" charset="UTF-8" src="{{url_for('static', filename='landing/common.js.download')}}">
+    
+</script><script type="text/javascript" charset="UTF-8" src="{{url_for('static', filename='landing/util.js.download')}}"></script>
+<script type="text/javascript" charset="UTF-8" src="{{url_for('static', filename='landing/stats.js.download')}}"></script></head>
+    <body><div class="slicknav_menu"><a href="" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style=""><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                        <li class="my-active slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Home</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">Home University</a></li>
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">Home College</a></li>
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">Home Online Education</a></li>
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">Home Language</a></li>
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">Home Kindergarten</a></li>
+                                <li><a href="http://codepixar.com/educare/php/06-home-driving-school.php" target="_blank" role="menuitem" tabindex="-1">Home Driving School</a></li>
+                                <li><a href="http://codepixar.com/educare/php/07-home-designing-school.php" target="_blank" role="menuitem" tabindex="-1">Home Designing School</a></li>
+                                <li><a href="http://codepixar.com/educare/php/08-home-cooking-school.php" target="_blank" role="menuitem" tabindex="-1">Home Cooking School</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Courses</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="http://codepixar.com/educare/php/10-course-grid-01.php" target="_blank" role="menuitem" tabindex="-1">Course Grid 01</a></li>
+                                <li><a href="http://codepixar.com/educare/php/11-course-grid-02.php" target="_blank" role="menuitem" tabindex="-1">Course Grid 02</a></li>
+                                <li><a href="http://codepixar.com/educare/php/12-course-list-01.php" target="_blank" role="menuitem" tabindex="-1">Course List 01</a></li>
+                                <li><a href="http://codepixar.com/educare/php/13-course-list-02.php" target="_blank" role="menuitem" tabindex="-1">Course List 02</a></li>
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">Course Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Teacher</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="http://codepixar.com/educare/php/26-teacher-grid.php" target="_blank" role="menuitem" tabindex="-1">Teacher Grid</a></li>
+                                <li><a href="http://codepixar.com/educare/php/27-teacher-list.php" target="_blank" role="menuitem" tabindex="-1">Teacher List</a></li>
+                                <li><a href="http://codepixar.com/educare/php/28-teacher-archive.php" target="_blank" role="menuitem" tabindex="-1">Teacher Archive</a></li>
+                                <li><a href="http://codepixar.com/educare/php/29-teacher-details.php" target="_blank" role="menuitem" tabindex="-1">Teacher Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Blog</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">blog home</a></li>
+                                <li><a href="http://codepixar.com/educare/php/33-blog-left-sidebar.php" target="_blank" role="menuitem" tabindex="-1">blog Left sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/34-blog-right-sidebar.php" target="_blank" role="menuitem" tabindex="-1">blog right sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/35-blog-single.php" target="_blank" role="menuitem" tabindex="-1">blog single</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Events</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="http://codepixar.com/educare/php/15-events-listview.php" target="_blank" role="menuitem" tabindex="-1">Events list view</a></li>
+                                <li><a href="http://codepixar.com/educare/php/16-events-gridview.php" target="_blank" role="menuitem" tabindex="-1">Events grid view</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Shop</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="http://codepixar.com/educare/php/36-shop-home.php" target="_blank" role="menuitem" tabindex="-1">shop home</a></li>
+                                <li><a href="http://codepixar.com/educare/php/37-shop-grid-sidebar.php" target="_blank" role="menuitem" tabindex="-1">shop grid sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/38-shop-list-sidebar.php" target="_blank" role="menuitem" tabindex="-1">shop list sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/39-shop-single-product.php" target="_blank" role="menuitem" tabindex="-1">shop single product</a></li>
+                                <li><a href="http://codepixar.com/educare/php/40-shop-cart.php" target="_blank" role="menuitem" tabindex="-1">shop cart</a></li>
+                                <li><a href="http://codepixar.com/educare/php/41-shop-checkout.php" target="_blank" role="menuitem" tabindex="-1">shop checkout</a></li>
+                                <li><a href="http://codepixar.com/educare/php/42-shop-payment.php" target="_blank" role="menuitem" tabindex="-1">shop Payment</a></li>
+                                <li><a href="http://codepixar.com/educare/php/43-shop-confirmation.php" target="_blank" role="menuitem" tabindex="-1">shop Confirmation</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">buddypress</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="http://codepixar.com/educare/php/44-buddypress-activity.php" target="_blank" role="menuitem" tabindex="-1">Buddypress activity</a></li>
+                                <li><a href="http://codepixar.com/educare/php/44-buddypress-activity-afterlogin.php" target="_blank" role="menuitem" tabindex="-1">Buddypress activity afterLogin</a></li>
+                                <li><a href="http://codepixar.com/educare/php/46-buddypress-members.php" target="_blank" role="menuitem" tabindex="-1">Buddypress member</a></li>
+                                <li><a href="http://codepixar.com/educare/php/45-buddypress-groups.php" target="_blank" role="menuitem" tabindex="-1">Buddypress group</a></li>
+                                <li><a href="http://codepixar.com/educare/php/48-buddypress-groupdetails-afterlogin.php" target="_blank" role="menuitem" tabindex="-1">Buddypress group afterLogin</a></li>
+                                <li><a href="http://codepixar.com/educare/php/49-buddypress-forums-home.php" target="_blank" role="menuitem" tabindex="-1">Buddypress forums home</a></li>
+                            </ul>
+                        </li>
+                        <li class="slicknav_collapsed slicknav_parent"><a href="" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style=""><a href="" tabindex="-1">Pages</a>
+                            <span class="slicknav_arrow">►</span></a><ul class="sub-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+                                <li><a href="http://codepixar.com/educare/php/50-elements.php" target="_blank" role="menuitem" tabindex="-1">Elements</a></li>
+                                <li><a href="" target="_blank" role="menuitem" tabindex="-1">About Educare</a></li>
+                                <li><a href="http://codepixar.com/educare/php/17-publication-board.php" target="_blank" role="menuitem" tabindex="-1">publication board</a></li>
+                                <li><a href="http://codepixar.com/educare/php/18-publication-details.php" target="_blank" role="menuitem" tabindex="-1">publication details</a></li>
+                                <li><a href="http://codepixar.com/educare/php/19-testimonials.php" target="_blank" role="menuitem" tabindex="-1">testimonials</a></li>
+                                <li><a href="http://codepixar.com/educare/php/20-clients.php" target="_blank" role="menuitem" tabindex="-1">clients</a></li>
+                                <li><a href="http://codepixar.com/educare/php/21-login-register.php" target="_blank" role="menuitem" tabindex="-1">login / register</a></li>
+                                <li><a href="http://codepixar.com/educare/php/22-department-grid.php" target="_blank" role="menuitem" tabindex="-1">department grid</a></li>
+                                <li><a href="http://codepixar.com/educare/php/23-department-list.php" target="_blank" role="menuitem" tabindex="-1">depatment list</a></li>
+                                <li><a href="http://codepixar.com/educare/php/24-faqs.php" target="_blank" role="menuitem" tabindex="-1">FAQS</a></li>
+                                <li><a href="http://codepixar.com/educare/php/25-contact.php" target="_blank" role="menuitem" tabindex="-1">Contact</a></li>
+                                <li><a href="http://codepixar.com/educare/php/30-404-error.php" target="_blank" role="menuitem" tabindex="-1">404 Error</a></li>
+                                <li><a href="http://codepixar.com/educare/php/31-comming-soon.php" target="_blank" role="menuitem" tabindex="-1">Comming soon</a></li>
+                            </ul>
+                        </li>
+                    </ul></div><div id="header1-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 70px;"><header id="header1" class="blue-bg default-header" style="width: 1349px; position: fixed; top: 0px;">
+    <div class="container">
+        <div class="navbar-area flex space-between">
+            <div class="left-bar">
+                <div class="logo">
+                    <a href="">
+                        <img src="{{url_for('static', filename='img/MoliLogoSmall.png')}}" alt="" height="88" width="72">
+                    </a>
+                </div>
+            </div>
+            <div class="right-bar flex">
+                <nav>
+                    <ul id="mobile" class="main-menu  hidden-xs">
+                        <li class="my-active"><a href="">Home</a>
+                           <!--  <ul class="sub-menu">
+                                <li><a href="" target="_blank">Home University</a></li>
+                                <li><a href="" target="_blank">Home College</a></li>
+                                <li><a href="" target="_blank">Home Online Education</a></li>
+                                <li><a href="" target="_blank">Home Language</a></li>
+                                <li><a href="" target="_blank">Home Kindergarten</a></li>
+                                <li><a href="http://codepixar.com/educare/php/06-home-driving-school.php" target="_blank">Home Driving School</a></li>
+                                <li><a href="http://codepixar.com/educare/php/07-home-designing-school.php" target="_blank">Home Designing School</a></li>
+                                <li><a href="http://codepixar.com/educare/php/08-home-cooking-school.php" target="_blank">Home Cooking School</a></li>
+                            </ul>
+                         --></li>
+                        <li><a href="#">Courses</a>
+                           <!--  <ul class="sub-menu">
+                                <li><a href="http://codepixar.com/educare/php/10-course-grid-01.php" target="_blank">Course Grid 01</a></li>
+                                <li><a href="http://codepixar.com/educare/php/11-course-grid-02.php" target="_blank">Course Grid 02</a></li>
+                                <li><a href="http://codepixar.com/educare/php/12-course-list-01.php" target="_blank">Course List 01</a></li>
+                                <li><a href="http://codepixar.com/educare/php/13-course-list-02.php" target="_blank">Course List 02</a></li>
+                                <li><a href="" target="_blank">Course Details</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="#">Teacher</a>
+                            <!-- <ul class="sub-menu">
+                                <li><a href="http://codepixar.com/educare/php/26-teacher-grid.php" target="_blank">Teacher Grid</a></li>
+                                <li><a href="http://codepixar.com/educare/php/27-teacher-list.php" target="_blank">Teacher List</a></li>
+                                <li><a href="http://codepixar.com/educare/php/28-teacher-archive.php" target="_blank">Teacher Archive</a></li>
+                                <li><a href="http://codepixar.com/educare/php/29-teacher-details.php" target="_blank">Teacher Details</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="#">Blog</a>
+                            <!-- <ul class="sub-menu">
+                                <li><a href="" target="_blank">blog home</a></li>
+                                <li><a href="http://codepixar.com/educare/php/33-blog-left-sidebar.php" target="_blank">blog Left sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/34-blog-right-sidebar.php" target="_blank">blog right sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/35-blog-single.php" target="_blank">blog single</a></li>
+                            </ul> -->
+                        </li>
+                        <!-- <li><a href="#">Events</a>
+                            <ul class="sub-menu">
+                                <li><a href="http://codepixar.com/educare/php/15-events-listview.php" target="_blank">Events list view</a></li>
+                                <li><a href="http://codepixar.com/educare/php/16-events-gridview.php" target="_blank">Events grid view</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop</a>
+                            <ul class="sub-menu">
+                                <li><a href="http://codepixar.com/educare/php/36-shop-home.php" target="_blank">shop home</a></li>
+                                <li><a href="http://codepixar.com/educare/php/37-shop-grid-sidebar.php" target="_blank">shop grid sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/38-shop-list-sidebar.php" target="_blank">shop list sidebar</a></li>
+                                <li><a href="http://codepixar.com/educare/php/39-shop-single-product.php" target="_blank">shop single product</a></li>
+                                <li><a href="http://codepixar.com/educare/php/40-shop-cart.php" target="_blank">shop cart</a></li>
+                                <li><a href="http://codepixar.com/educare/php/41-shop-checkout.php" target="_blank">shop checkout</a></li>
+                                <li><a href="http://codepixar.com/educare/php/42-shop-payment.php" target="_blank">shop Payment</a></li>
+                                <li><a href="http://codepixar.com/educare/php/43-shop-confirmation.php" target="_blank">shop Confirmation</a></li>
+                            </ul>
+                        </li> -->
+                       <!--  <li><a href="#">buddypress</a>
+                            <ul class="sub-menu">
+                                <li><a href="http://codepixar.com/educare/php/44-buddypress-activity.php" target="_blank">Buddypress activity</a></li>
+                                <li><a href="http://codepixar.com/educare/php/44-buddypress-activity-afterlogin.php" target="_blank">Buddypress activity afterLogin</a></li>
+                                <li><a href="http://codepixar.com/educare/php/46-buddypress-members.php" target="_blank">Buddypress member</a></li>
+                                <li><a href="http://codepixar.com/educare/php/45-buddypress-groups.php" target="_blank">Buddypress group</a></li>
+                                <li><a href="http://codepixar.com/educare/php/48-buddypress-groupdetails-afterlogin.php" target="_blank">Buddypress group afterLogin</a></li>
+                                <li><a href="http://codepixar.com/educare/php/49-buddypress-forums-home.php" target="_blank">Buddypress forums home</a></li>
+                            </ul>
+                        </li>
+ -->                        <li><a href="">Logout</a>
+                            <!-- <ul class="sub-menu">
+                                <li><a href="http://codepixar.com/educare/php/50-elements.php" target="_blank">Elements</a></li>
+                                <li><a href="" target="_blank">About Educare</a></li>
+                                <li><a href="http://codepixar.com/educare/php/17-publication-board.php" target="_blank">publication board</a></li>
+                                <li><a href="http://codepixar.com/educare/php/18-publication-details.php" target="_blank">publication details</a></li>
+                                <li><a href="http://codepixar.com/educare/php/19-testimonials.php" target="_blank">testimonials</a></li>
+                                <li><a href="http://codepixar.com/educare/php/20-clients.php" target="_blank">clients</a></li>
+                                <li><a href="http://codepixar.com/educare/php/21-login-register.php" target="_blank">login / register</a></li>
+                                <li><a href="http://codepixar.com/educare/php/22-department-grid.php" target="_blank">department grid</a></li>
+                                <li><a href="http://codepixar.com/educare/php/23-department-list.php" target="_blank">depatment list</a></li>
+                                <li><a href="http://codepixar.com/educare/php/24-faqs.php" target="_blank">FAQS</a></li>
+                                <li><a href="http://codepixar.com/educare/php/25-contact.php" target="_blank">Contact</a></li>
+                                <li><a href="http://codepixar.com/educare/php/30-404-error.php" target="_blank">404 Error</a></li>
+                                <li><a href="http://codepixar.com/educare/php/31-comming-soon.php" target="_blank">Comming soon</a></li>
+                            </ul> -->
+                        </li>
+                    </ul>
+                </nav>
+                <div class="search-icon hidden-xs">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header></div>
+<div class="search-area">
+    <div class="container">
+        <div class="row fitscreen flex flex-middle relative" style="height: 543px;">
+            <form action="#" class="search-form">
+                <input id="focus" placeholder="Search your query and press “Enter”" type="text">
+            </form>
+        </div>
+    </div>
+</div><main>
+<!-- Static Banner Area Start -->
+<section id="slider">
+    <div class="static-banner relative">
+        <div class="overlay blue-overlay-5"></div>
+        <div class="page-head">
+            <h2 class="page-title">Beginners Business Course</h2>
+            <ul class="page-title-btn">
+                <li><a href="http://codepixar.com/educare/php/01-home-university.php" target="_blank">Home <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="http://codepixar.com/educare/php/10-course-grid-01.php" target="_blank">Course <i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                <li><a href="#" class="active">Course Details</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Static Banner Area End -->
+<!-- Web Design Course Area Start -->
+<section class="section-full">
+    <div class="container">
+        <div class="row">
+            <div class="web-course">
+                <div class="col-md-8 col-xs-12">
+                    <div class="left-web-course">
+                        <img src="{{url_for('static', filename='landing/w1.jpg')}}" alt="" class="img-responsive">
+                        <div class="tab-menu mt-20">
+                            <ul id="tabs-swipe-demo" class="tabs course-tab">
+                                <li class="tab"><a href="#objectives">Objectives</a></li>
+                                <li class="tab"><a href="#eligibility" class="">Eligibility</a></li>
+                                <li class="tab"><a href="#course-outline" class="">Course Outline</a></li>
+                                <li class="tab"><a class="active" href="#comments">Comments</a></li>
+                            <div class="indicator" style="right: 286.75px; left: 395.25px;"></div></ul>
+                        </div>
+                        <div id="objectives" class="objectives mt-30" style="display: none;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                        </div>
+                        <div id="eligibility" class="eligibility mt-30" style="display: none;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                        </div>
+                        <div id="course-outline" class="course-outline mt-30" style="display: none;">
+                            <ul class="flex space-between">
+                                <li>Introduction Lesson</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Basics of HTML</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Getting Know about HTML 5</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Tags and Attributes</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Basics of CSS</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Getting Familiar with CSS 3</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Introduction to Bootstrap 3.0</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Responsive Design</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <ul class="flex space-between">
+                                <li>Canvas in HTML 5</li>
+                                <li><a href="#" data-toggle="modal" data-target="#myModal">View Details</a></li>
+                            </ul>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <img src="{{url_for('static', filename='landing/light-box.jpg')}}" alt="" class="img-responsive">
+                                        <h3>Tags And Attributes</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciu odit aut fugit, sed quia consequuntur magni dolores eos</p>
+                                        <div class="back-btn text-right">
+                                            <button class="btn" data-dismiss="modal" aria-label="Close">Back</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="comments" class="comments mt-30 active" style="display: block;">
+                            <div class="total-comment">
+                                <div class="single-comment">
+                                    <div class="comment-head">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="{{url_for('static', filename='landing/comment-person.png')}}" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Prince </h4>
+                                                <p>12th November, 2017 at 05:56 pm</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                    </div>
+                                </div>
+                                <div class="single-comment ml-20 mt-30">
+                                    <div class="comment-head">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="{{url_for('static', filename='landing/comment-person.png')}}" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Prince </h4>
+                                                <p>12th November, 2017 at 05:56 pm</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                    </div>
+                                </div>
+                                <div class="single-comment mt-30">
+                                    <div class="comment-head">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="{{url_for('static', filename='landing/comment-person.png')}}" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Prince </h4>
+                                                <p>12th November, 2017 at 05:56 pm</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn"><i class="fa fa-reply" aria-hidden="true"></i>Reply</a>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="leave-comment">
+                                <h4>Leave a Commnt</h4>
+                                <form action="#">
+                                    <div class="col-sm-7 pn1">
+                                        <p><input placeholder="First Name" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;First Name&#39;" type="text"></p>
+                                        <p><textarea placeholder="Comment" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Comment&#39;"></textarea></p>
+                                    </div>
+                                    <div class="col-sm-5 pn2">
+                                        <p><input placeholder="Email Address" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Email Address&#39;" type="email"></p>
+                                        <p><input placeholder="Phone Number" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Phone Number&#39;" type="text"></p>
+                                        <p><button class="btn submit-btn">Submit Comment</button></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12">
+                    <div class="right-web-course">
+                        <div class="single-info flex space-between">
+                            <h4><span class="et-line icon-profile-male"></span>Username</h4>
+                            <h4><a href="#">{{user}}</a></h4>
+                        </div>
+                        <div class="single-info flex space-between">
+                            <h4><span class="et-line icon-pricetags"></span>Course Fee</h4>
+                            <h4>N30</h4>
+                        </div>
+                        <div class="single-info flex space-between">
+                            <h4><span class="et-line icon-profile-male"></span>Available Courses</h4>
+                            <h4>5</h4>
+                        </div>
+                        <div class="single-info flex space-between">
+                            <h4><span class="et-line  icon-alarmclock"></span>Schedule</h4>
+                            <h4></h4>
+                        </div>
+                       <!--  <div class="single-info flex space-between">
+                            <h4><span class="et-line icon-bargraph"></span>Difficulty Level</h4>
+                            <h4>Intermediate</h4>
+                        </div>
+                        <div class="single-info flex space-between">
+                            <h4><span class="et-line icon-flag"></span>Branch Name</h4>
+                            <h4>Head Branch</h4>
+                        </div>
+                        <div class="single-info flex space-between">
+                            <h4><span class="et-line icon-layers"></span>Typology</h4>
+                            <h4>Premium</h4>
+                        </div> -->
+                        <div class="single-info click-review flex space-between">
+                            <h4><span class="et-line icon-ribbon"></span>Reviews</h4>
+                            <h4 class="review-star">
+                            <span><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i></span>
+                            <span class="btn toltip">View Reveiw Details</span>
+                            </h4>
+                        </div>
+                        <div class="expand-review">
+                            <div class="teacher-rating-top">
+                                <div class="rating flex">
+                                    <div class="rating-box">
+                                        <ul>
+                                            <li>Average</li>
+                                            <li class="av-rating">4.9</li>
+                                            <li>(2 Ratings)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="rating-body">
+                                        <h4>Provide Your Rating</h4>
+                                        <ul>
+                                            <li>Quality <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                        </ul>
+                                        <ul>
+                                            <li>Quality <span class="normal"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>  Outstanding</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="feed-back mt-20">
+                                    <h4>Your Feedback</h4>
+                                    <textarea></textarea>
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                            <div class="total-comment mt-50">
+                                <div class="single-comment mt-30">
+                                    <div class="comment-head">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="{{url_for('static', filename='landing/comment-person.png')}}" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Prince </h4>
+                                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    </div>
+                                </div>
+                                <div class="single-comment mt-30">
+                                    <div class="comment-head">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object" src="{{url_for('static', filename='landing/comment-person.png')}}" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Prince </h4>
+                                                <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p class="mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center"><button class="btn enroll">Enroll the Course</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / #Web Design Course End -->
+<!-- Col To Action Start -->
+<!-- <section class="cta-1 cta2 cta3">
+    <div class="cta-bg2 relative" data-velocity=".2">
+        <div class="overlay cta-overlay-bg-blue"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="cta-content">
+                        <h2>Thousands of students are graduated. Why not you?</h2>
+                        <form action="#" class="cta-register">
+                            <div class="row">
+                                <h3 class="text-center mb-40 primary-color fz-24">Register Now</h3>
+                                <div class="col-sm-offset-1 col-sm-5 col-xs-12">
+                                    <p><input type="text" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Your Name&#39;" placeholder="Enter your Full Name"></p>
+                                    <p><input type="email" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Your Email Address&#39;" placeholder="Enter your Full Name"></p>
+                                </div>
+                                <div class="col-sm-5 col-xs-12">
+                                    <p><input type="text" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Your Phone Number&#39;" placeholder="Enter your Full Name"></p>
+                                    <div class="select-ct">
+                                        <select style="display: none;">
+                                            <option value="1">Choose course</option>
+                                            <option value="2">Saab</option>
+                                            <option value="3">Opel</option>
+                                            <option value="4">Audi</option>
+                                        </select><div class="nice-select" tabindex="0"><span class="current">Choose course</span><ul class="list"><li data-value="1" class="option selected">Choose course</li><li data-value="2" class="option">Saab</li><li data-value="3" class="option">Opel</li><li data-value="4" class="option">Audi</li></ul></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="text-center"><button class="submit-btn">Submit</button></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ --><!-- Col To Action End -->
+<!-- Related Course Area Start -->
+<section class="section-full course-grid1">
+    <div class="container">
+        <div class="popular-course">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="section-head text-center pb-50">
+                        <h2 class="first-title">Related Courses</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adippisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="popular-course-body">
+                <div class="col-sm-4">
+                    <div class="single-popular">
+                        <img src="{{url_for('static', filename='landing/r1.jpg')}}" class="img-responsive" alt="">
+                        <div class="grid-course">
+                            <div class="popular-course-content p-40">
+                                <h3><a href="" target="_blank">Basic Courses</a></h3>
+                                <p class="reviews pt-20">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span class="review-count">20 Reviews</span>
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                <a href="" target="_blank" class="learn">Learn More  <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="course-bottom flex">
+                                <div class="single-bottom trainer">
+                                    <a href="http://codepixar.com/educare/php/29-teacher-details.php" target="_blank"><span class="et-line icon-profile-male"></span><span></span></a>
+                                </div>
+                                <div class="single-bottom">
+                                    <span></span>
+                                </div>
+                                <div class="single-bottom amount">
+                                    <span>N30000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-popular">
+                        <img src="{{url_for('static', filename='landing/r2.jpg')}}" class="img-responsive" alt="">
+                        <div class="grid-course">
+                            <div class="popular-course-content p-40">
+                                <h3><a href="" target="_blank">Intermediary Course</a></h3>
+                                <p class="reviews pt-20">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span class="review-count">20 Reviews</span>
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                <a href="#" class="learn">Learn More  <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="course-bottom flex">
+                                <div class="single-bottom trainer">
+                                    <a href="http://codepixar.com/educare/php/29-teacher-details.php" target="_blank"><span class="et-line icon-profile-male"></span><span></span></a>
+                                </div>
+                                <div class="single-bottom">
+                                    <span></span>
+                                </div>
+                                <div class="single-bottom amount">
+                                    <span>N40000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-popular">
+                        <img src="{{url_for('static', filename='landing/r3.jpg')}}" class="img-responsive" alt="">
+                        <div class="grid-course">
+                            <div class="popular-course-content p-40">
+                                <h3><a href="" target="_blank">Advance Course</a></h3>
+                                <p class="reviews pt-20">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span class="review-count">20 Reviews</span>
+                                </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                <a href="#" class="learn">Learn More  <i class="ml-10 fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="course-bottom flex">
+                                <div class="single-bottom trainer">
+                                    <a href="http://codepixar.com/educare/php/29-teacher-details.php" target="_blank"><span class="et-line icon-profile-male"></span><span></span></a>
+                                </div>
+                                <div class="single-bottom">
+                                    <span></span>
+                                </div>
+                                <div class="single-bottom amount">
+                                    <span>N50,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / #Related Course End -->
+</main>
+<!-- Footer Area Start -->
+<footer id="footer1" class="bg-blue">
+    <div class="footer2">
+        <div class="container">
+            <div class="row">
+                <div class="footer-widget">
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <!-- <div class="footer-widget-address">
+                            <img src="{{url_for('static', filename='landing/1.jpg')}}" alt="" class="img-responsive">
+                            <ul class="footer-address">
+                                <li><span class="et-line icon-map-pin"></span>56/8, West panthapath,India.</li>
+                                <li><span class="et-line icon-mic"></span> +00 91 234 567 890</li>
+                                <li><span class="et-line icon-global"></span>www.educare.com</li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-link">
+                            <h4 class="second-title">Useful Links</h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul>
+                                        <li><a href="" target="_blank">About Us</a></li>
+                                        <li><a href="" target="_blank">Blog</a></li>
+                                        <li><a href="http://codepixar.com/educare/php/25-contact.php" target="_blank">Contact</a></li>
+                                        <li><a href="http://codepixar.com/educare/php/11-course-grid-02.php" target="_blank">Courses</a></li>
+                                        <li><a href="http://codepixar.com/educare/php/24-faqs.php" target="_blank">FAQS</a></li>
+                                        <!-- <li><a href="http://codepixar.com/educare/php/15-events-listview.php" target="_blank">Events</a></li> -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="col-sm-8">
+                                    <ul>
+                                        <li><a href="#">Become a Teacher</a></li>
+                                        <li><a href="#">Maintenance</a></li>
+                                        <li><a href="#">Language Packs</a></li>
+                                        <li><a href="#">LearnPress</a></li>
+                                        <li><a href="#">Release Status</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-course">
+                            <h4 class="second-title">Recent Courses</h4>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="" target="_blank">
+                                        <img class="media-object" src="{{url_for('static', filename='landing/2.jpg')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="" target="_blank">Basic Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>20 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="" target="_blank">
+                                        <img class="media-object" src="{{url_for('static', filename='landing/3.jpg')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="" target="_blank">Intermediary Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>35 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="media single-widget-course">
+                                <div class="media-left">
+                                    <a href="" target="_blank">
+                                        <img class="media-object" src="{{url_for('static', filename='landing/2.jpg')}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="" target="_blank"> Advance Course</a></h4>
+                                    <p class="reviews">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <span>35 Reviews</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-12 tb-height">
+                        <div class="footer-widget-contact">
+                            <h4 class="second-title">Send Message</h4>
+                            <form action="">
+                                <p><input placeholder="Name" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;First Name&#39;" type="text" required=""></p>
+                                <p><input placeholder="Email" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Email Address&#39;" type="email" required=""></p>
+                                <p><textarea cols="30" rows="10" placeholder="Comment" onfocus="this.placeholder = &#39;&#39;" onblur="this.placeholder = &#39;Comment&#39;" required=""></textarea></p>
+                                <p><button class="btn submit-btn">Send</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="footer-social-link">
+                        <ul class="flex flex-center">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-rss"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom-text">
+                        <p>Copyright &amp;copy 2017.  <a href="">Moli</a>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Area End -->
+        
+        <!--
+        JavaScripts
+        ========================== -->
+        <script src="{{url_for('static', filename='landing/jquery-2.2.4.min.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/bootstrap.min.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/materialize.min.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/owl.carousel.min.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/jquery.sticky.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/jquery.slicknav.min.js.download')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='landing/js')}}"></script>
+        <script src="{{url_for('static', filename='landing/jquery.nice-select.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/jquery.jCounter-0.1.4.js.download')}}"></script>
+        <script src="{{url_for('static', filename='landing/main.js.download')}}"></script>
+        <!-- <script src="js/minified/minified.js"></script> -->
+        <script src="{{url_for('static', filename='landing/map-init.js.download')}}"></script>
+    
+<div class="hiddendiv common"></div></body></html>

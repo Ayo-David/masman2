@@ -1,0 +1,809 @@
+
+
+<html lang="en-gb" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,, user-scalable=no">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body class="bg-cover">
+<style type="text/css">
+
+body{
+    margin-left: 18px;
+    margin-top: 18px;
+}
+
+body{
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color : #474747;
+    background-color: transparent;
+}
+
+select, option{
+    font-size:13px;
+}
+
+ol.phpfmg_form{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+ol.phpfmg_form input, ol.phpfmg_form textarea, ol.phpfmg_form select{
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ol.phpfmg_form li{
+    margin-bottom:5px;
+    clear:both;
+    display:block;
+    overflow:hidden;
+	width: 100%
+}
+
+
+.form_field, .form_required{
+    font-weight : bold;
+}
+
+.form_required{
+    color:red;
+    margin-right:8px;
+}
+
+.field_block_over{
+}
+
+.form_submit_block{
+    padding-top: 3px;
+}
+
+.text_box,.text_select {
+    height: 32px;
+}
+
+.text_box, .text_area, .text_select {
+    min-width:160px;
+    max-width:300px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text_area{
+    height:80px;
+}
+
+.form_error_title{
+    font-weight: bold;
+    color: red;
+}
+
+.form_error{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form_error_highlight{
+    background-color: #F4F6E5;
+    border-bottom: 1px dashed #ff0000;
+}
+
+div.instruction_error{
+    color: red;
+    font-weight:bold;
+}
+
+hr.sectionbreak{
+    height:1px;
+    color: #ccc;
+}
+
+#one_entry_msg{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#frmFormMailContainer input[type="submit"]{
+    padding: 10px 25px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #FAFBFC;
+}
+
+#frmFormMailContainer input[type="submit"]:hover{
+    background-color: #E4F0F8;
+}
+
+    
+
+
+
+</style>
+
+
+
+<div class="form_description">
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->  <!--<![endif]-->
+
+
+	<title>Contact Us | Mastros Food and Income | Empowering People, Living Fulfilled</title>
+	
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+    
+    <!-- Favicon --> 
+	<link rel="shortcut icon" href="http://mastros.com.ng/images/favicon.ico">
+    
+    <!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
+   	<link href="{{url_for('static', filename='register_files_style/css')}}" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static', filename='register_files_style/css(1)')}}" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <!-- ######### CSS STYLES ######### -->
+	
+    <link rel="stylesheet" href="{{url_for('static', filename='register_files_style/reset.css')}}" type="text/css">
+	<link rel="stylesheet" href="{{url_for('static', filename='register_files_style/style.css')}}" type="text/css">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='register_files_style/font-awesome.min.css')}}>
+    
+    <!-- responsive devices styles -->
+	<link rel="stylesheet" media="screen" href="{{url_for('static', filename='register_files_style/responsive-leyouts.css')}}" type="text/css">
+    
+    <!-- animations -->
+    <link href="{{url_for('static', filename='register_files_style/animations.min.css')}}" rel="stylesheet" type="text/css" media="all">
+    
+<!-- just remove the below comments witch color skin you want to use -->
+    <link rel="stylesheet" href="{{url_for('static', filename='register_files_style/lightblue.css')}}">
+    
+
+<!-- just remove the below comments witch bg patterns you want to use --> 
+    <!--<link rel="stylesheet" href="css/bg-patterns/pattern-default.css" />-->
+    	<link rel="stylesheet" href="{{url_for('static', filename='register_files_style/pattern-five.css')}}">
+    
+    
+    <!-- mega menu -->
+    <link href="{{url_for('static', filename='register_files_style/sticky.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='register_files_style/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='register_files_style/demo.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='register_files_style/menu.css')}}" rel="stylesheet">
+    
+   
+    <style type="text/css">
+    a:link {
+	color: #FF85D1;
+}
+    </style>
+  
+        <!-- forms -->
+    <link rel="stylesheet" href="{{url_for('static', filename='register_files_style/sky-forms.css')}}" type="text/css" media="all">
+    
+
+
+
+
+<div class="site_wrapper">
+
+<div id="sliderWrap">
+
+
+	
+        
+</div>
+
+<div class="clearfix"></div>
+
+<header id="header" style="height: 128px;" class="sticky condensed">
+
+	<!-- Top header bar -->
+	<div id="topHeader">
+    
+	<div class="wrapper">
+         
+        <div class="top_nav">
+        <div class="container">
+                
+        <div class="right">
+            
+            <ul>
+            	<li class="link">
+                      <table width="400" border="0" align="right" cellspacing="0">
+  <tbody><tr>    
+    <td id="TimeZone0" width="100"></td>
+    
+
+  </tr>
+</tbody></table>
+                
+                </li>
+                <li class="link"><a href="http://www.mastros.com.ng/webmail"><i class="fa fa-edit"></i> Staff e-mail</a></li>
+                <li><a href="mailto:info@mastros.com.ng"><i class="fa fa-envelope"></i> info@mastros.com.ng</a></li>
+                <li><i class="fa fa-phone"></i> +234 906 5599 735</li>
+            	
+                <li><a href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/mastrosfoodinc"><i class="fa fa-twitter"></i></a></li>
+                
+                <li><a href="https://www.instagram.com/mastroslimited/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+            
+        </div><!-- end right social links -->
+        
+        </div>
+        </div>
+            
+ 	</div>
+    
+	</div><!-- end top navigation -->
+	
+    
+	<div id="trueHeader">
+    
+	<div class="wrapper">
+    
+     <div class="container">
+    
+		<!-- Logo -->
+		<div class="logo"><a href="http://mastros.com.ng/index.html" name="logo" id="logo"></a></div>
+		
+	<!-- Menu -->
+	<div class="menu_main">
+        
+	<div class="navbar yamm navbar-default">
+    
+    <div class="container">
+      <div class="navbar-header">
+        <div class="navbar-toggle .navbar-collapse .pull-right " data-toggle="collapse" data-target="#navbar-collapse-1"> <span>Menu</span>
+          <button type="button"> <i class="fa fa-bars"></i></button>
+        </div>
+      </div>
+      
+      <div id="navbar-collapse-1" class="navbar-collapse collapse pull-right">
+      
+        <ul class="nav navbar-nav">
+        
+ <li><a href="http://mastros.com.ng/index.html" class=""><i class="fa fa-home"></i> Home</a></li>
+        
+        
+        
+ <li><a href="http://mastros.com.ng/about_us.html" class=""><i class="fa fa-briefcase"></i> About Us</a></li>
+        
+ <li><a href="http://mastros.com.ng/how_it_works.html" class=""><i class="fa fa-dashboard"></i> How It Works</a></li>
+ 
+<li> <a href="http://mastros.com.ng/register.php" class="active"><i class="fa fa-book"></i> Register</a></li>       
+
+ <li><a href="http://mastros.com.ng/contact_us.html" class=""><i class="fa fa-phone"></i> Contact Us</a></li>
+  
+          </ul>
+
+      </div>
+      </div>
+     </div>
+     
+	</div><!-- end menu -->
+        
+	</div>
+		
+	</div>
+    
+	</div>
+    
+</header>
+<div class="clearfix"></div>
+
+<div class="page_title">
+<div class="container">
+
+    <div class="title"><h1>Online Registration</h1></div>
+    
+</div>
+</div><!-- end page title --> 
+
+<div class="one_full">
+	
+	{{ report }}
+</div>
+
+
+
+
+
+<div class="container">
+
+    <div class="content_fullwidth">                        
+                                
+                                          
+      <div class="two_third">
+      
+      
+      <div id="frmFormMailContainer">
+
+<form action='{{url_for('register')}}' method="POST">
+
+
+<ol class="phpfmg_form">
+
+<li class="field_block" id="field_1_div"><hr class="sectionbreak">
+CREATE AN ACCOUNT</li>
+<li class="field_block" id="field_2_div"><div class="col_label">
+    <label class="form_field">USERNAME:</label> <label class="form_required">*</label> </div>
+    <div class="col_field">
+    <input type="text" name="username" id="field_2" value="" class="text_box">
+    <div id="field_2_tip" class="instruction"></div>
+    </div>
+</li>
+
+<li class="field_block" id="field_3_div"><div class="col_label">
+    <label class="form_field">PASSWORD:</label> <label class="form_required">*</label> </div>
+    <div class="col_field">
+    <input type="password" name="password" id="field_3" value="" class="text_box">
+    <div id="field_3_tip" class="instruction"></div>
+    </div>
+</li>
+
+<li class="field_block" id="field_4_div"><div class="col_label">
+    <label class="form_field">EMAIL:</label> <label class="form_required">*</label> </div>
+    <div class="col_field">
+    <input type="text" name="email" id="field_4" value="" class="text_box">
+    <div id="field_4_tip" class="instruction"></div>
+    </div>
+</li>
+
+
+<li class="field_block" id="field_1_div"><hr class="sectionbreak">
+APPLICANT'S INFORMATION</li>
+<li class="field_block" id="field_2_div"><div class="col_label">
+	<label class="form_field">FULL NAME:</label> <label class="form_required">*</label> </div>
+	<div class="col_field">
+	<input type="text" name="name" id="field_2" value="" class="text_box">
+	<div id="field_2_tip" class="instruction">*Firs Name - Middle Name - Surname</div>
+	</div>
+</li>
+
+<li class="field_block" id="field_3_div"><div class="col_label">
+	<label class="form_field">PHONE NO:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="phone" id="field_3" value="" class="text_box">
+	<div id="field_3_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_4_div"><div class="col_label">
+	<label class="form_field">WHATSAPP NO:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="whatsapp_no" id="field_4" value="" class="text_box">
+	<div id="field_4_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_5_div"><div class="col_label">
+	<label class="form_field">DATE OF BIRTH:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	
+<select name="day" id="field_5_day" class="">	
+<option value="" selected="">-DD-</option>	
+<option value="01">01</option>	
+<option value="02">02</option>	
+<option value="03">03</option>	
+<option value="04">04</option>	
+<option value="05">05</option>	
+<option value="06">06</option>	
+<option value="07">07</option>	
+<option value="08">08</option>	
+<option value="09">09</option>	
+<option value="10">10</option>	
+<option value="11">11</option>	
+<option value="12">12</option>	
+<option value="13">13</option>	
+<option value="14">14</option>	
+<option value="15">15</option>	
+<option value="16">16</option>	
+<option value="17">17</option>	
+<option value="18">18</option>	
+<option value="19">19</option>	
+<option value="20">20</option>	
+<option value="21">21</option>	
+<option value="22">22</option>	
+<option value="23">23</option>	
+<option value="24">24</option>	
+<option value="25">25</option>	
+<option value="26">26</option>	
+<option value="27">27</option>	
+<option value="28">28</option>	
+<option value="29">29</option>	
+<option value="30">30</option>	
+<option value="31">31</option>	
+</select>
+/&nbsp;<select name="month" id="field_5_month" class="">	
+<option value="" selected="">-MM-</option>	
+<option value="01">01</option>	
+<option value="02">02</option>	
+<option value="03">03</option>	
+<option value="04">04</option>	
+<option value="05">05</option>	
+<option value="06">06</option>	
+<option value="07">07</option>	
+<option value="08">08</option>	
+<option value="09">09</option>	
+<option value="10">10</option>	
+<option value="11">11</option>	
+<option value="12">12</option>	
+</select>
+/&nbsp;<select name="year" id="field_5_yyyy" class="">	
+<option value="" selected="">-YYYY-</option>	
+<option value="1948">1948</option>	
+<option value="1949">1949</option>	
+<option value="1950">1950</option>	
+<option value="1951">1951</option>	
+<option value="1952">1952</option>	
+<option value="1953">1953</option>	
+<option value="1954">1954</option>	
+<option value="1955">1955</option>	
+<option value="1956">1956</option>	
+<option value="1957">1957</option>	
+<option value="1958">1958</option>	
+<option value="1959">1959</option>	
+<option value="1960">1960</option>	
+<option value="1961">1961</option>	
+<option value="1962">1962</option>	
+<option value="1963">1963</option>	
+<option value="1964">1964</option>	
+<option value="1965">1965</option>	
+<option value="1966">1966</option>	
+<option value="1967">1967</option>	
+<option value="1968">1968</option>	
+<option value="1969">1969</option>	
+<option value="1970">1970</option>	
+<option value="1971">1971</option>	
+<option value="1972">1972</option>	
+<option value="1973">1973</option>	
+<option value="1974">1974</option>	
+<option value="1975">1975</option>	
+<option value="1976">1976</option>	
+<option value="1977">1977</option>	
+<option value="1978">1978</option>	
+<option value="1979">1979</option>	
+<option value="1980">1980</option>	
+<option value="1981">1981</option>	
+<option value="1982">1982</option>	
+<option value="1983">1983</option>	
+<option value="1984">1984</option>	
+<option value="1985">1985</option>	
+<option value="1986">1986</option>	
+<option value="1987">1987</option>	
+<option value="1988">1988</option>	
+<option value="1989">1989</option>	
+<option value="1990">1990</option>	
+<option value="1991">1991</option>	
+<option value="1992">1992</option>	
+<option value="1993">1993</option>	
+<option value="1994">1994</option>	
+<option value="1995">1995</option>	
+<option value="1996">1996</option>	
+<option value="1997">1997</option>	
+<option value="1998">1998</option>	
+<option value="1999">1999</option>	
+<option value="2000">2000</option>	
+<option value="2001">2001</option>	
+<option value="2002">2002</option>	
+<option value="2003">2003</option>	
+</select>
+
+<input type="hidden" name="field_5_format" value="dd/mm/yyyy">
+<input type="hidden" name="field_5_separator" value="/">
+
+	<div id="field_5_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_6_div"><div class="col_label">
+	<label class="form_field">ADDRESS:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="address" id="field_6" value="" class="text_box">
+	<div id="field_6_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_7_div"><div class="col_label">
+	<label class="form_field">EMAIL ADDRESS:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="email" id="field_7" value="" class="text_box">
+	<div id="field_7_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_8_div"><div class="col_label">
+	<label class="form_field">NATIONALITY:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="nationality" id="field_8" value="" class="text_box">
+	<div id="field_8_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_9_div"><div class="col_label">
+	<label class="form_field">NEXT-OF-KIN:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="next_of_kin" id="field_9" value="" class="text_box">
+	<div id="field_9_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_10_div"><div class="col_label">
+	<label class="form_field">PHONE NO:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="next_phone" id="field_10" value="" class="text_box">
+	<div id="field_10_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_11_div"><hr class="sectionbreak">
+ACCOUNT DETAILS:</li>
+<li class="field_block" id="field_12_div"><div class="col_label">
+	<label class="form_field">BANK NAME:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="bank" id="field_12" value="" class="text_box">
+	<div id="field_12_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_13_div"><div class="col_label">
+	<label class="form_field">ACCOUNT NO:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="account_no" id="field_13" value="" class="text_box">
+	<div id="field_13_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_14_div"><div class="col_label">
+	<label class="form_field">ACCOUNT NAME:</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="account_name" id="field_14" value="" class="text_box">
+	<div id="field_14_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_15_div"><hr class="sectionbreak">
+MARITAL STATUS</li>
+<li class="field_block" id="field_16_div"><div class="col_label">
+	<label class="form_field">MARRIED OF SINGLE?</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="marital_status" id="field_16" value="" class="text_box">
+	<div id="field_16_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_17_div"><div class="col_label">
+	<label class="form_field">IF MARRIED, SPOUSE FULL NAME</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="spouse_name" id="field_17" value="" class="text_box">
+	<div id="field_17_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_18_div"><hr class="sectionbreak">
+PROVE OF MARRIAGE</li>
+<li class="field_block" id="field_19_div"><div class="col_label">
+	<label class="form_field">WEDDING CERTIFICATE</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="radio" name="wedding_certificate" id="field_19_0" value="CERTIFICATE OF WHITE WEDDING:" class="form_radio"><label class="form_choice_text" for="field_19_0">CERTIFICATE OF WHITE WEDDING:</label><br>	
+<input type="radio" name="court_wedding" id="field_19_1" value="COURT WEDDING" class="form_radio"><label class="form_choice_text" for="field_19_1">COURT WEDDING</label><br>	
+<input type="radio" name="traditional_wedding" id="field_19_2" value="TRADITIONAL WEDDING" class="form_radio"><label class="form_choice_text" for="field_19_2">TRADITIONAL WEDDING</label><br>	
+<input type="hidden" name="field_19_length" value="3">	<div id="field_19_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_20_div"><div class="col_label">
+	<label class="form_field">DATE OF MARRIAGE</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="date_of_marriage" id="field_20" value=" " class="text_box">
+	<div id="field_20_tip" class="instruction">* Day / Month /Year</div>
+	</div>
+</li>
+
+<li class="field_block" id="field_21_div"><hr class="sectionbreak">
+REFERRAL'S DETAILS</li>
+<li class="field_block" id="field_22_div"><div class="col_label">
+	<label class="form_field">FULL NAME</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="referral_name" id="field_22" value="" class="text_box">
+	<div id="field_22_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_23_div"><div class="col_label">
+	<label class="form_field">REFERRAL'S ID No.</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="text" name="referral_id" id="field_23" value="" class="text_box">
+	<div id="field_23_tip" class="instruction"></div>
+	</div>
+</li>
+
+<li class="field_block" id="field_24_div"><hr class="sectionbreak">
+SALES OPTION:</li>
+<li class="field_block" id="field_25_div"><div class="col_label">
+	<label class="form_field">TICK</label> <label class="form_required">&nbsp;</label> </div>
+	<div class="col_field">
+	<input type="checkbox" name="love_marketing" id="field_25_0" value="LOVE MARKETING" class="form_checkbox"><label class="form_choice_text" for="field_25_0">I LOVE MARKETING OF PRODUCTS</label><br>	
+<input type="checkbox" name="timid_marketing" id="field_25_1" value="TIMID TO MARKET" class="form_checkbox"><label class="form_choice_text" for="field_25_1">I AM TOO TIMID TO MARKET PRODUCTS</label><br>	
+</div>
+	</div>
+</li>
+
+
+
+
+
+            <li>
+            <div class="col_label">&nbsp;</div>
+            <div class="form_submit_block col_field">
+                <input type="submit" value="Submit" class="form_button">
+            </div>
+            </li>
+
+</ol>
+</form>
+
+<iframe name="submitToFrame" id="submitToFrame" src="javascript:false?wmode=transparent" style="position:absolute;top:-10000px;left:-10000px;" mark_dailymotion="1" kwframeid="1" src="./register.php_files/saved_resource.html"></iframe>
+
+</div>
+     
+     <!-- end of form container -->
+
+
+     
+      
+        
+      </div><!-- end section -->
+      
+      
+        
+	  </div>
+        
+    </div>
+    
+  </div><!-- end content area -->
+
+<div class="clearfix margin_top3"></div>
+
+
+<div class="footer_graph"></div>
+
+
+<div class="footer1">
+  <div class="container">
+    <div class="clearfix divider_dashed1"></div>
+    <div class="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
+      <ul class="faddress">
+        <li><img src="{{url_for('static', filename = 'register_files_style/footer-logo.png')}}" alt=""></li>
+        <li><i class="fa fa-map-marker fa-lg"></i> MASTROS Nigeria Limited 
+        <br> No. 1 Aba Road, Opposite Four Point Hotel, Opp. Plaza, Ikot Ekpene, Akwan Ibom State - Nigeria  </li>
+        
+        <li><i class="fa fa-phone"></i>Tel:  +234 906 5599 735 </li>
+        <li><a href="mailto:info@mastros.com.ng"><i class="fa fa-envelope"></i> info@mastros.com.ng</a></li>
+        <li><a href="mailto:mastrosng@gmail.com"><i class="fa fa-envelope"></i> mastrosng@gmail.com</a></li>
+        <li><img src="./register.php_files/footer-wmap.png" alt=""></li>
+      </ul>
+    </div>
+    <!-- end address -->
+    <div class="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
+      <div class="qlinks">
+        <h4 class="lmb">Quick Links</h4>
+        <ul>
+          <li><a href="http://mastros.com.ng/index.html"><i class="fa fa-angle-right"></i> Home</a></li>
+          <li><a href="http://mastros.com.ng/about_us.html"><i class="fa fa-angle-right"></i> About Us</a></li>
+          <li><a href="http://mastros.com.ng/how_it_works.html"><i class="fa fa-angle-right"></i> How It Works</a></li>
+          <li><a href="http://mastros.com.ng/register.php"><i class="fa fa-angle-right"></i> Register Now</a></li>
+          <li><a href="http://mastros.com.ng/contact_us.html"><i class="fa fa-angle-right"></i> Enquiry</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end links -->
+    <div class="one_fourth animate fadeInUp" data-anim-type="fadeInUp">
+      <div class="siteinfo">
+        <h4 class="lmb">About Us</h4>
+        <p> Mastros Food and Income is a referral marketing programme put in place by the Mastros Group of Companies. The firm is registered in Nigeria under the Corporate Affairs Commission to carry-out business.  </p>
+        <br>
+        <a href="http://mastros.com.ng/about_us.html">Read more <i class="fa fa-long-arrow-right"></i></a></div>
+    </div>
+    <!-- end site info -->
+    <div class="one_fourth last animate fadeInUp" data-anim-type="fadeInUp">
+      <h4>Follow on Twitter</h4>
+      <div id="flickr_badge_wrapper"> 
+        
+      </div>
+    </div>
+    <!-- end flickr -->
+  </div>
+</div><!-- end footer -->
+
+<div class="clearfix"></div>
+
+<div class="copyright_info">
+  <div class="container">
+    <div class="clearfix divider_dashed10"></div>
+    <div class="one_half animate fadeInRight" data-anim-type="fadeInRight"> Copyright ©2018 Mastros Nigeria Ltd. All rights reserved. <a href="http://mastros.com.ng/register.php#">Terms of Use</a> | <a href="http://mastros.com.ng/register.php#">Privacy Policy</a></div>
+    <div class="one_half last">
+      <ul class="footer_social_links">
+        <li class="animate zoomIn" data-anim-type="zoomIn"><a href="https://web.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+        <li class="animate zoomIn" data-anim-type="zoomIn"><a href="https://twitter.com/mastrofoodinc"><i class="fa fa-twitter"></i></a></li>
+        <li class="animate zoomIn" data-anim-type="zoomIn"><a href="https://www.instagram.com/mastroslimited/"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- end copyright info -->
+
+
+<a href="http://mastros.com.ng/register.php#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
+
+
+
+
+
+
+</div>
+
+    
+
+
+
+
+<div class="form_footer">
+
+</div>
+
+	<br><br>
+
+	<div style="padding-left:10px; font-size:11px;color:#cccccc;text-decoration:none;">
+		
+	</div>
+
+ 
+
+</body></html>
