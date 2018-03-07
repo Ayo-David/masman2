@@ -49,7 +49,7 @@
                             <li><a href="">Profile</a></li>
                             <li><a href="">Contacts</a></li>
                             <li class="divider"></li>
-                            <li><a href="">Logout</a></li>
+                            <li><a href="{{url_for('logout')}}">Logout</a></li>
                         </ul>
                     </div>
                     <div class="logo-element">
@@ -95,7 +95,7 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="http://webapplayers.com/inspinia_admin-v2.7.1/projects.html#">
-                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
                         <li>
@@ -148,7 +148,7 @@
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle count-info" data-toggle="dropdown" href="http://webapplayers.com/inspinia_admin-v2.7.1/projects.html#">
-                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        <i class="fa fa-bell"></i>  <span class="label label-primary"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-alerts">
                         <li>
@@ -191,7 +191,7 @@
 
 
                 <li>
-                    <a href="http://webapplayers.com/inspinia_admin-v2.7.1/login.html">
+                    <a href="{{url_for('logout')}}">
                         <i class="fa fa-sign-out"></i> Log out
                     </a>
                 </li>
@@ -264,11 +264,6 @@
                                                 <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
                                             {%endfor%}
 
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a1.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a2.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a4.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a5.jpg')}}"></a>
                                         </td>
                                         <td class="project-actions">
                                             <a href="" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
@@ -291,9 +286,10 @@
                                             </div>
                                         </td>
                                         <td class="project-people">
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a7.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a6.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
+                                            {% for network in downline %}
+                                                <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
+                                            {%endfor%}
+
                                         </td>
                                         <td class="project-actions">
                                             <a href="" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
@@ -316,10 +312,10 @@
                                             </div>
                                         </td>
                                         <td class="project-people">
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a2.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a1.jpg')}}"></a>
-                                            <a href=""><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a7.jpg')}}"></a>
+                                            {% for network in downline %}
+                                                <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
+                                            {%endfor%}
+
                                         </td>
                                         <td class="project-actions">
                                             <a href="" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>

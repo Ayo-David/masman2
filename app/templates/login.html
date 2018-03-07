@@ -28,6 +28,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{url_for('static', filename ='assets/ico/apple-touch-icon-114-precomposed.png')}}">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{url_for('static', filename ='assets/ico/apple-touch-icon-72-precomposed.png')}}">
         <link rel="apple-touch-icon-precomposed" href="{{url_for('static', filename ='assets/ico/apple-touch-icon-57-precomposed.png')}}">
+        {{ JSGlue.include() }}
 
     </head>
 
@@ -76,8 +77,8 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 social-login">
-                        	<h3>...or login with:</h3>
-                        	<!--<div class="social-login-buttons">
+                        	<!--<h3>...or login with:</h3>
+                        	<div class="social-login-buttons">
 	                        	<a class="btn btn-link-2" href="#">
 	                        		<i class="fa fa-facebook"></i> Facebook
 	                        	</a>

@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, session, redirect, url_for, g
 from pymongo import MongoClient
 import bcrypt
+from flask_jsglue import JSGlue
 
 
 app = Flask(__name__)
+jsglue = JSGlue(app)
 
 #client = MongoClient('localhost', 27017)
 #db = client.testdb#like the database
@@ -39,7 +41,7 @@ def register(report=None):
         existing_referral = user.find_one({'referrer_id' : referral_id})
 
          #to fetch the refferal id from g1 as user_id
-        referral_parent = referral_id[5:]
+        referral_parent = referral_id[4:]
 
         rp = int(referral_parent)
 
@@ -52,10 +54,10 @@ def register(report=None):
         #report = 'Grand Parent' + grand_parent + 'Referal Parent' + str(referral_parent)
  
         #check if referral exist
-        if existing_referral is None:
+        if existing_referral:
 
             user_id = user.find().count()+1
-            referrer_id = 'MFING'+ str(user_id)
+            referrer_id = 'MFNG'+ str(user_id)
             #referrer_id is the id the user can give to others to refer them to the platform
             #referral_id is the id of the person who refer you
 
@@ -117,7 +119,7 @@ def register(report=None):
                         #         })
                                 
 
-                report =  'Successfully Register. You can now' + "<a href='/login'>Login</a>"
+                report =  'Successfully Register. You can now Login'
 
             else:
                 report = 'Username is not available, please try another username'
@@ -152,13 +154,19 @@ def login(report=None):
     return render_template('login.html', report = report)
 
 
+@app.route('/logout')
+def logout(report=None):
+    session.pop('username', None)
+    return redirect('http://www.mastros.com.ng')
+
+
 @app.route('/userdashboard')
 def userdashboard():
     #if session is set
     if g.user:                                                                                                                                                             
         user = db.user
         login_user = user.find_one({'username' : session['username']})
-        myid = 'MFING' + str(login_user['user_id'])
+        myid = 'MFNG' + str(login_user['user_id'])
        
         #return render_template('userdashboard.html', user=session['email'])
         downline1 = user.find({'referral_id':myid})
