@@ -205,7 +205,7 @@
 			<div class="row wrapper border-bottom white-bg page-heading">
 			
                 <div class=          "col-sm-4">
-                    <h2>My Network</h2>
+                    <h2>My Mastros ID: {{ myid }}</h2>
                  <!--   <ol class="breadcrumb">
                         <li>
                             <a href="">Home</a>
@@ -249,7 +249,7 @@
                                             <span class="label label-primary">Active</span>
                                         </td>
                                         <td class="project-title">
-                                            <a href="http://webapplayers.com/inspinia_admin-v2.7.1/project_detail.html">Direct Downline (First Generation)</a>
+                                            <a href="">Direct Downline (First Generation)</a>
                                             <br>
                                             <small>Created 14.08.2014</small>
                                         </td>
@@ -286,7 +286,7 @@
                                             </div>
                                         </td>
                                         <td class="project-people">
-                                            {% for network in downline %}
+                                            {% for network in downline2 %}
                                                 <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
                                             {%endfor%}
 
@@ -301,7 +301,7 @@
                                             <span class="label label-primary">Active</span>
                                         </td>
                                         <td class="project-title">
-                                            <a href="http://webapplayers.com/inspinia_admin-v2.7.1/project_detail.html">Downline 3 (Third Generation)</a>
+                                            <a href="">Downline 3 (Third Generation)</a>
                                             <br>
                                             <small>Created 22.07.2014</small>
                                         </td>
@@ -312,7 +312,7 @@
                                             </div>
                                         </td>
                                         <td class="project-people">
-                                            {% for network in downline %}
+                                            {% for network in downline3 %}
                                                 <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
                                             {%endfor%}
 
