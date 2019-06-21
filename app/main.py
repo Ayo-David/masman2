@@ -10,11 +10,11 @@ from twilio.rest import Client
 # from paystackapi.transaction import Transaction
 from python_paystack.paystack_config import PaystackConfig
 
-from python_paystack.objects.transactions import Transaction
-from python_paystack.managers import TransactionsManager
+#from python_paystack.objects.transactions import Transaction
+#from python_paystack.managers import TransactionsManager
 
 
-from paystack.resource import TransactionResource
+#from paystack.resource import TransactionResource
 
 import random
 import string
