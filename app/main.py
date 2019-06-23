@@ -58,13 +58,13 @@ jsglue = JSGlue(app)
 
 
 MLAB = 'mongodb://mastros:mastros101@ds241578.mlab.com:41578/mastros'
-client = MongoClient(MLAB, ConnectTimeoutMS=3000)
+#client = MongoClient(MLAB, ConnectTimeoutMS=3000)
 #db = client.mastros#like the database
 
 #mongo = PyMongo(app)
 #db = mongo.mastros
 
-#client = MongoClient('localhost', 27017)    #Configure the connection to the database
+client = MongoClient('localhost', 27017)    #Configure the connection to the database
 db = client.mastros    #Select the database
 #todos = db.todo #Select the collection
 
@@ -110,7 +110,7 @@ def register(report=None):
  
         #check if referral exist
         if existing_referral:
-
+            #assign id to the new user
             user_id = user.find().count()+1
             referrer_id = 'MFNG'+ str(user_id)
 
@@ -171,7 +171,8 @@ def register(report=None):
                 reward(referral_id)
                 
                 #if not within the 1st 12 (the first 12 will not have a referal) 
-                
+                #anytime a new user register, g1, g2, g3 is updated for the referral and the user who has those parents
+                #from g1, g2, g3 get all the downline t a user
                 if user_id<1:
 
                     generation1.insert({
@@ -448,6 +449,8 @@ def userdashboard():
         myid = 'MFNG' + str(login_user['user_id'])
 
         status = myStatus.find({'user_id':myid}).limit(1).sort('date',-1)
+        #status = myStatus.find({'user_id':myid}).limit(1)
+        
 
        
         #return render_template('userdashboard.html', user=session['email'])
@@ -455,6 +458,9 @@ def userdashboard():
         
         downline2 = generation2.find({'grand_parent':myid})
         downline3 = generation3.find({'gg_parent':myid})
+
+        #leftjoin here
+
         #return status['status']
         return render_template('referral.html', downline = downline1, downline2 = downline2, downline3 = downline3, user=session['username'], myid = myid, mystatus = status)
 

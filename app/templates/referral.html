@@ -13,15 +13,15 @@
     <link href="{{url_for('static', filename ='userdashboard/animate.css')}}" rel="stylesheet">
     <link href="{{url_for('static', filename ='userdashboard/style.css')}}" rel="stylesheet">
 
+     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename ='userdashboard/tooltipster-master/dist/css/tooltipster.bundle.min.css')}}" />
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 <!-- 
     <script type="text/javascript" src="{{url_for('static', filename ='assets/js/jquery-1.11.1.min.js')}}"></script>
- -->    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename ='assets/tooltipster/dist/css/tooltipster.bundle.min.css')}}" />
-
-    
-    <!-- <script type="text/javascript" src="{{url_for('static', filename ='assets/tooltipster/dist/js/tooltipster.bundle.min.js')}}"></script> -->
-    <script type="text/javascript" src="{{url_for('static', filename ='assets/tooltipster/dist/js/tooltipster.main.js')}}"></script>
-
+ -->      
+    <script type="text/javascript" src="{{url_for('static', filename ='userdashboard/tooltipster-master/dist/js/tooltipster.bundle.min.js')}}"></script> 
+   <!--  <script type="text/javascript" src="{{url_for('static', filename ='userdashboard/tooltipster-master/dist/js/tooltipster.main.js')}}"></script>
+ -->
 
 <script type="text/javascript" async="" src="{{url_for('static', filename ='userdashboard/mixpanel-2-latest.min.js.download')}}"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
 .en-markup-crop-options {
@@ -189,9 +189,9 @@
 
 <!--TOP TITLE-->
 			<div class="row wrapper border-bottom white-bg page-heading">
-			
+			   
                 <div class=          "col-sm-4">
-                    <h2>My Mastros ID: {{ myid }}</h2>
+                    <h2>My Mastros ID: {{ myid }}  My Status: {{ mystatus['status'] }}</h2>
                  <!--   <ol class="breadcrumb">
                         <li>
                             <a href="">Home</a>
@@ -237,21 +237,21 @@
                                         <td class="project-title">
                                             <a href="">Direct Downline (First Generation)</a>
                                             <br>
-                                            <small>Created 14.08.2014</small>
+                                            <small></small>
                                         </td>
                                         <td class="project-completion">
-                                                <small>Completion with: 48%</small>
+                                                <!-- <small>Completion with: 48%</small>
                                                 <div class="progress progress-mini">
                                                     <div style="width: 48%;" class="progress-bar"></div>
-                                                </div>
+                                                </div> -->
                                         </td>
                                         <td class="project-people">
                                             {% for network in downline %}
-                                                <a href="{{network['user_id']}}"><img data-tooltip-content="#tooltip_content" alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
+                                                <a href=""><img  alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}" title="{{network['name']}},  {{network['phone']}}"></a>
 
                                                 <div class="tooltip_templates">
                                                     <span id="tooltip_content">
-                                                        <img src="myimage.png" /> <strong>This is the content of my tooltip!</strong>
+                                                        <img src="myimage.png" /> <strong>{{network['user_id']}}</strong>
                                                     </span>
                                                 </div>
                                             {%endfor%}
@@ -269,19 +269,19 @@
                                         <td class="project-title">
                                             <a href="">Downline 2 (Second Generation)</a>
                                             <br>
-                                            <small>Created 11.08.2014</small>
+                                            <small></small>
                                         </td>
                                             <td class="project-people">
                                             {% for network in downline2 %}
-                                                <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
+                                                <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}" title="{{network['user_id']}}"></a>
                                             {%endfor%}
                                         </td>
 
                                         <td class="project-completion">
-                                            <small>Completion with: 28%</small>
+                                            <!-- <small>Completion with: 28%</small>
                                             <div class="progress progress-mini">
                                                 <div style="width: 28%;" class="progress-bar"></div>
-                                            </div>
+                                            </div> -->
                                         </td>
                                         
                                         <td class="project-actions">
@@ -296,17 +296,17 @@
                                         <td class="project-title">
                                             <a href="">Downline 3 (Third Generation)</a>
                                             <br>
-                                            <small>Created 22.07.2014</small>
+                                            <small></small>
                                         </td>
                                         <td class="project-completion">
-                                            <small>Completion with: 83%</small>
+                                            <!-- <small>Completion with: 83%</small>
                                             <div class="progress progress-mini">
                                                 <div style="width: 83%;" class="progress-bar"></div>
                                             </div>
-                                        </td>
+ -->                                        </td>
                                         <td class="project-people">
                                             {% for network in downline3 %}
-                                                <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"></a>
+                                                <a href="{{network['user_id']}}"><img alt="image" class="img-circle" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}" title="{{network['user_id']}}"></a>
                                             {%endfor%}
 
                                         </td>

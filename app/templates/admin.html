@@ -100,7 +100,7 @@
                     <div class="ibox">
                         <div class="ibox-content" style="
     height: 919px;>
-                            <!-- <span class="text-muted small pull-right">Last modification: <i class="fa fa-clock-o"></i> 2:10 pm - 12.06.2014</span> -->
+                            <!-- <span class="text-muted small pull-right">Last modification: <i class="fa fa-clock-o"></i> </span> -->
                             <h2>Registered Members</h2>
                             <p>
                                 Click on each member for details
@@ -129,6 +129,7 @@
                                                  <tr>                                
                                                     <td class="client-avatar"><img alt="image" src="{{url_for('static', filename ='userdashboard/a3.jpg')}}"> </td>
                                                     <td><a data-toggle="tab" href="{{user['name']}}" class="client-link">{{user['name']}}</a></td>
+                                                    <td> {{user['referrer_id']}}</td>
                                                     <td> {{user['email']}}</td>
                                                     <td class="contact-type"><i class="fa fa-envelope"> </i></td>
                                                     <td> {{user['phone']}}</td>
@@ -367,7 +368,7 @@
                                                     <i class="fa fa-coffee"></i>
                                                 </div>
                                                 <div class="vertical-timeline-content">
-                                                    <p>MFNG 10 can now be promoted to Sales Rep 2 and paid accordingly
+                                                    <p>Coming soon...
                                                     </p>
                                                     <span class="vertical-date small text-muted">  </span>
                                                 </div>
