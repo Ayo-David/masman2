@@ -58,13 +58,13 @@ jsglue = JSGlue(app)
 
 
 MLAB = 'mongodb://mastros:mastros101@ds241578.mlab.com:41578/mastros'
-#client = MongoClient(MLAB, ConnectTimeoutMS=3000)
+client = MongoClient(MLAB, ConnectTimeoutMS=3000)
 #db = client.mastros#like the database
 
 #mongo = PyMongo(app)
 #db = mongo.mastros
 
-client = MongoClient('localhost', 27017)    #Configure the connection to the database
+#client = MongoClient('localhost', 27017)    #Configure the connection to the database
 db = client.mastros    #Select the database
 #todos = db.todo #Select the collection
 
@@ -450,7 +450,7 @@ def userdashboard():
 
         status = myStatus.find({'user_id':myid}).limit(1).sort('date',-1)
         #status = myStatus.find({'user_id':myid}).limit(1)
-        
+
 
        
         #return render_template('userdashboard.html', user=session['email'])
