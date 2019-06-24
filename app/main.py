@@ -329,7 +329,7 @@ def login(report=None):
     if request.method == 'POST':
         session.pop('username', None)
         user = db.user
-        login_user = user.find_one({'username' : request.form['username']})
+        login_user = user.find_one({'referrer_id' : request.form['username']})
        #myemail = login_user['email']
         #print (myemail)
         if login_user:
@@ -342,7 +342,7 @@ def login(report=None):
             
             return redirect(url_for('userdashboard'))
             #print (myemail)
-            report =  'Invalid username/password'
+            report =  'Invalid ID/password'
     
     return render_template('login.html', report = report)
 
@@ -445,11 +445,12 @@ def userdashboard():
         generation3 = db.generation3
         myStatus = db.status
         
-        login_user = user.find_one({'username' : session['username']})
+        login_user = user.find_one({'referrer_id' : session['username']})
         myid = 'MFNG' + str(login_user['user_id'])
 
         status = myStatus.find({'user_id':myid}).limit(1).sort('date',-1)
         #status = myStatus.find({'user_id':myid}).limit(1)
+        #status = myStatus.find_one({'user_id':myid})
 
 
        
@@ -460,6 +461,7 @@ def userdashboard():
         downline3 = generation3.find({'gg_parent':myid})
 
         #leftjoin here
+        #print (status['status'])
 
         #return status['status']
         return render_template('referral.html', downline = downline1, downline2 = downline2, downline3 = downline3, user=session['username'], myid = myid, mystatus = status)
