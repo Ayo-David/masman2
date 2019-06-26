@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flat Trendy Signup Forms responsive widget Design :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="" />
+<link href="{{url_for('static', filename='css/style.css')}}" rel='stylesheet' type='text/css' />
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,700,800' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<script>$(document).ready(function(c) {
+	$('.close').on('click', function(c){
+		$('.login-form').fadeOut('slow', function(c){
+	  		$('.login-form').remove();
+		});
+	});	  
+});
+</script>
+
+ <!--SIGN UP-->
+ 		<div class="logotop">
+			<img src="{{url_for('static', filename='img/MoliLogoSmall.png')}}" height="88" width="72" align="center">
+		</div>
+		
+		<div class="login-form">
+			<div class="close"> </div>
+					<div class="head">
+					</div>
+					<div class="head-info">
+						<h1>SIGN UP</h1>
+                        {% if report %}
+						<h2>{{ report }}</h2>
+                        {% else %};
+                    <h2>Hello and Welcome! Register Here</h2>
+                        
+                    
+					</div>
+				<form method='POST' action='{{url_for('register')}}'>
+					<li>
+						<input type="text" class="text" value="Name" name = "name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" ><a href="#" class=" icon user"></a>
+					</li>
+					<li>
+						<input type="text" class="text" value="Email" name = "email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" ><a href="#" class=" icon mail"></a>
+					</li>
+					<li>
+						<input type="password" value="Password" name = "password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"><a href="#" class=" icon lock"></a>
+					</li>
+					
+					<li>
+						<input type="password" value="Password" name = "password2" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"><a href="#" class=" icon lock"></a>
+					</li>
+					<div class="p-container">
+								<input type="submit"  value="SIGN UP" >
+							<div class="clear"> </div>
+					</div>
+				</form>
+				<div class="social-icons">
+							<div class="but-bottom">
+							<a href="/login" class="account"><p>Already have an account?</p></a>
+							<a href="#" class="trouble"><p>Trouble signing in?</p></a><div class="clear"> </div></div>
+							<a href="#" class="social-account"><h3>or sign in with social account</h3></a>
+							<a href="#"><ul class="facebook">
+								<li><img src="{{url_for('static', filename='img/fb.png')}}" />Facebook</li>
+							</ul></a>
+							<a href="#"><ul class="google-plus">
+								<li><img src="{{url_for('static', filename='img/gp.png')}}" />Google +</li>
+							</ul></a>
+							<div class="clear"> </div>
+				</div>
+							</div>
+                            {% endif %}
+ <!--/SIGN UP-->
+ <script>$(document).ready(function(c) {
+	$('.close-1').on('click', function(c){
+		$('.thank-you').fadeOut('slow', function(c){
+	  		$('.thank-you').remove();
+		});
+	});	  
+});
+</script>
+
+
+
+ 
+</body>
+</html>
